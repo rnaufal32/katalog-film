@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Katalog Film</string>
+
+    <!-- Start Film Data -->
+    <string name="setting_activity">Settings</string>
+
+    <string name="detail_film">Detail Movie</string>
+
+    <string name="sinopsis">Synopsis</string>
+
+    <string name="user_score">Popularity</string>
+    <string name="release_date">Release Date</string>
+    <string name="photo">Photo</string>
+    <string name="change_language">Change Language</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="english">English</string>
+
+    <!-- Start TV Show Data -->
+
+    <string name="movie">Movie</string>
+
+    <string name="tv_show">TV Show</string>
+
+    <string name="detail_tv">Detail TV Show</string>
+
+    <string name="fav_menu">Favorite</string>
+    <string name="snack_fav">Added to Favorite</string>
+    <string name="snack_fav_cancel">Undo</string>
+    <string name="favorite_activity">Favorite</string>
+    <string name="empty_fav">Your Favorite is empty</string>
+    <string name="search">Search</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget" tools:keep="@string/add_widget">Add widget</string>
+    <string name="snack_unfav">Remove from Favorite</string>
+    <string name="notif_user">Hi Filmers, Don\'t forget to check our new Popular Movie and Tv Show</string>
+    <string name="release_reminder">Release Reminder</string>
+    <string name="daily_reminder">Daily Reminder</string>
+
+    <!-- End TV Show Data -->
+</resources>

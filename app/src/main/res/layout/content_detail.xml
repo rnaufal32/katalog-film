@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_overlapTop="60dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/detail_progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DetailActivity">
+
+            <ImageView
+                android:id="@+id/detailPhoto"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/photo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/film_poster_aquaman" />
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="50dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detailPhoto"
+                app:layout_constraintTop_toTopOf="@+id/detailPhoto"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/release_date"
+                app:layout_constraintStart_toStartOf="@+id/detailTitle"
+                app:layout_constraintTop_toBottomOf="@+id/detailTitle" />
+
+            <TextView
+                android:id="@+id/detailYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/detailVote"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_text"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/detailPhoto"
+                app:layout_constraintStart_toStartOf="@+id/detailScore"
+                app:layout_constraintTop_toBottomOf="@+id/detailScore"
+                tools:text="8.5" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/user_score"
+                app:layout_constraintStart_toStartOf="@+id/detailYear"
+                app:layout_constraintTop_toBottomOf="@+id/detailYear" />
+
+            <TextView
+                android:id="@+id/detailScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/sinopsis"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/detailPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/detailPhoto" />
+
+            <TextView
+                android:id="@+id/detailSynopsis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:text="TextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

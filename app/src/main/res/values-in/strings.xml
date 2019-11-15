@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Katalog Film</string>
+    <string name="setting_activity">Pengaturan</string>
+    <string name="detail_film">Detail Film</string>
+
+    <!-- Start Film Data -->
+    <string name="sinopsis">Sinopsis</string>
+
+    <string name="user_score">Popularitas</string>
+
+    <string name="release_date">Tanggal Rilis</string>
+
+    <string name="photo">Photo</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="english">English</string>
+    <string name="movie">Film</string>
+    <string name="tv_show">Serial TV</string>
+    <string name="detail_tv">Detail Serial Tv</string>
+    <string name="fav_menu">Kesukaan</string>
+    <string name="snack_fav">Ditambahkan ke daftar kesukaan</string>
+    <string name="snack_fav_cancel">Urungkan</string>
+    <string name="favorite_activity">Kesukaan</string>
+    <string name="empty_fav">Kamu belum memiliki daftar disukai</string>
+    <string name="search">Telusuri</string>
+    <string name="appwidget_text">CONTOH</string>
+    <string name="add_widget" tools:keep="@string/add_widget">Tambah</string>
+    <string name="snack_unfav">Dihapus dari daftar kesukaan</string>
+    <string name="notif_user">Hi Filmers, Jangan lupa cek Film dan Serial Tv Terbaru Kesukaanmu</string>
+    <string name="release_reminder">Pengingat Rilis Baru</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+
+</resources>
